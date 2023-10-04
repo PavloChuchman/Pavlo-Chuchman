@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7FFFD4; /* Аквамариновий фон гри */
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid #4CAF50;
+    box-sizing: border-box;
+    background-color: #7FFFD4; /* Аквамариновий фон гри */
+}
+
+#top-block {
+    position: absolute;
+    top: 10px; /* Відступ зверху */
+    left: 10%; /* Відступ зліва */
+    right: 10%; /* Відступ справа */
+    color: black;
+}
+
+#bottom-block {
+    position: absolute;
+    top: 20%; /* Відступ зверху для ігрової зони */
+    left: 10%; /* Відступ зліва для ігрової зони */
+    right: 10%; /* Відступ справа для ігрової зони */
+    bottom: 10%; /* Відступ знизу для ігрової зони */
+    border: 2px solid black; /* Обводка для ігрової зони */
+    box-sizing: border-box; /* Зробимо обводку частиною загального розміру */
+}
+
+#levelDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#clickCountDisplay {
+    margin-top: 10px;
+    color: black;
+}
+
+#clickCount {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#dot {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    border: 2px solid white
+}
+
+#levelDisplay, #clickCountDisplay, #clickCount {
+    font-family: 'Gabarito', cursive; /* Використовуємо шрифти з меню */
+    color: purple; /* Колір тексту білий */
+}

@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клікер</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <p id='text'>I learning JavaScript events!</p>
-<div>
-  <button onclick="changeCSS()">Change style!</button>
-</div>
-
-<script>
-function changeCSS() {
-  const paragraph = document.getElementById('text');
-
-  paragraph.style.color = 'orange';
-  paragraph.style.fontSize = '20px';
-  paragraph.style.fontFamily = 'Comic Sans MS';
-}
-</script>
+    <div id="game-container">
+        <div id="top-block">
+            <p id="levelDisplay">Рівень 1</p>
+            <div id="clickCountDisplay">
+                <p id="clickCount">0</p>
+            </div>
+        </div>
+        <div id="bottom-block">
+            <div id="dot"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
