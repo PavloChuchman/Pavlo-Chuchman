@@ -72,11 +72,12 @@ class Clicker {
         const randomX = Math.random() * gameAreaWidth;
         const randomY = Math.random() * gameAreaHeight;
     
-        this.dot.style.left = `${randomX}px`;
-        this.dot.style.top = `${randomY}px`;
+        this.dot.style.left = randomX + 'px';
+        this.dot.style.top = randomY + 'px';
     
         this.dot.style.display = 'block';
-    }    
+    }
+    
 
     hideDot() {
         this.dot.style.display = 'none';
